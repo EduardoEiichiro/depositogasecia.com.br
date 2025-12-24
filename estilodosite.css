@@ -1,0 +1,330 @@
+* {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Borda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+.Destaques a, a:visited{
+    color: #0FF;
+    text-decoration: none;
+}
+
+.Destaques a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+header.Destaques {
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    text-decoration: none;
+    text-align: center;
+    color: #0FF;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+footer {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: auto;
+    z-index: 1;
+}
+
+#ajeitar {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-wrap: wrap; /* Permite que os itens se ajustem quando a tela for pequena */
+}
+
+#ajeitar p {
+    margin: 0; /* Remove a margem do parágrafo */
+}
+
+#ajeitar div {
+    display: flex;
+    align-items: center; /* Alinha os ícones verticalmente ao centro */
+}
+
+#ajeitar a {
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.ajeitar {
+    margin-left: 20px; /* Ajuste do alinhamento da imagem */
+    max-width: 180px; /* Limita o tamanho da imagem */
+}
+.btn-whatsapp {
+    background-color: #25D366 !important;
+    color: white !important;
+    border: none;
+}
+.btn-whatsapp:hover {
+    background-color: #1EBE5D !important;
+    color: white !important;
+}
+.Negrito {
+    font-weight: bold;
+    font-size: 4rem;
+}
+.Negrito2 {
+    font-weight: bold;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+button, .btn-whatsapp, .btn-primary {
+    animation: pulsar 1.5s infinite ease-in-out;
+    transition: all 0.3s ease-in-out;
+}/* Resetando estilo básico */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não alterem o tamanho dos elementos */
+}
+
+/* Estilo do corpo da página */
+body {
+    text-decoration: none;
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Filtro de desfoque para a imagem de fundo */
+.Borda {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Estilo do menu de navegação */
+header.Destaques {
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Mantém o fundo escuro com transparência */
+    color: #0FF; /* Define a cor do texto para ciano */
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    text-decoration: none;
+    text-align: center;
+    color: #0FF;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: auto;
+    z-index: 1;
+}
+
+/* Estilo dos ícones e links do rodapé */
+#ajeitar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#ajeitar p {
+    margin: 0;
+}
+
+#ajeitar div {
+    display: flex;
+    align-items: center;
+}
+
+#ajeitar a {
+    margin-right: 10px;
+}
+
+.ajeitar {
+    margin-left: 20px;
+    max-width: 180px;
+}
+
+/* Estilo para os botões do WhatsApp */
+.btn-whatsapp {
+    background-color: #25D366 !important;
+    color: white !important;
+    border: none;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EBE5D !important;
+    color: white !important;
+}
+
+/* Estilo para as fontes em negrito */
+.Negrito {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.Negrito2 {
+    font-weight: bold;
+}
+
+/* Animação de pulsar para os botões */
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+button, .btn-whatsapp, .btn-primary {
+    animation: pulsar 1.5s infinite ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    header.Destaques {
+        text-align: center;
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+        font-size: 1.1rem; /* Ajuste na fonte para telas menores */
+    }
+
+    .Negrito {
+        font-size: 3rem; /* Diminui o tamanho do texto em telas menores */
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    /* Ajusta os ícones do rodapé */
+    #ajeitar {
+        flex-direction: column; /* Coloca os ícones em coluna */
+        align-items: center;
+    }
+
+    .ajeitar {
+        max-width: 150px; /* Reduz o tamanho da imagem */
+    }
+}
+
+/* Para telas de smartphones em modo retrato */
+@media (max-width: 480px) {
+    header.Destaques {
+        padding: 10px;
+        font-size: 1rem; /* Diminui o tamanho da fonte */
+    }
+
+    main {
+        font-size: 1rem; /* Ajuste de fonte para facilitar a leitura */
+        padding: 10px;
+    }
+
+    .Negrito {
+        font-size: 2.5rem; /* Menor tamanho de fonte */
+    }
+
+    .Negrito2 {
+        font-size: 1.8rem; /* Ajuste de fonte */
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.9rem; /* Menor tamanho de fonte */
+    }
+
+    .ajeitar {
+        max-width: 120px; /* Reduz ainda mais o tamanho da imagem */
+    }
+
+    /* Ajusta o botão do WhatsApp */
+    .btn-whatsapp {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,166 @@
+/* Resetando estilo básico */
+* {
+    text-decoration: none;
+    box-sizing: border-box; /* Garante que padding e border não afetem o tamanho dos elementos */
+}
+
+/* Estilo básico do body */
+body {
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo da borda de fundo */
+.Borda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+/* Estilo dos links da seção "Destaques" */
+.Destaques a, a:visited {
+    color: #0FF;
+    text-decoration: none;
+}
+
+.Destaques a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Estilo do header "Destaques" */
+header.Destaques {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo do main */
+main {
+    text-align: center;
+    color: black;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: auto;
+    z-index: 1;
+}
+
+/* Estilo para o layout dos ícones e conteúdo */
+#ajeitar {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-wrap: wrap; /* Permite que os itens se ajustem quando a tela for pequena */
+}
+
+/* Ajustes nos ícones e elementos internos */
+#ajeitar p {
+    margin: 0;
+}
+
+#ajeitar div {
+    display: flex;
+    align-items: center; /* Alinha os ícones verticalmente ao centro */
+}
+
+#ajeitar a {
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.ajeitar {
+    margin-left: 20px;
+    max-width: 180px; /* Limita o tamanho da imagem */
+}
+
+/* Estilo para textos em negrito */
+.Negrito {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.Negrito2 {
+    font-weight: bold;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos móveis e tablets (largura menor que 768px) */
+@media (max-width: 768px) {
+    header.Destaques {
+        text-align: center; /* Alinha o texto ao centro */
+        padding: 15px; /* Ajusta o padding para telas menores */
+    }
+
+    main {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte no main */
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem; /* Ajuste no tamanho da fonte do rodapé */
+    }
+
+    #ajeitar {
+        flex-direction: column; /* Coloca os itens em coluna para melhor visualização em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .ajeitar {
+        max-width: 150px; /* Limita o tamanho da imagem para telas menores */
+    }
+}
+
+/* Para smartphones em modo retrato (largura menor que 480px) */
+@media (max-width: 480px) {
+    header.Destaques {
+        padding: 10px; /* Ajuste no padding */
+        font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+    }
+
+    main {
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+    }
+
+    footer {
+        padding: 10px; /* Ajuste no padding do rodapé */
+        font-size: 0.8rem; /* Ajuste no tamanho da fonte */
+    }
+
+    #ajeitar {
+        flex-direction: column; /* Coloca os itens em coluna */
+        align-items: center; /* Alinha os itens no centro */
+    }
+
+    .ajeitar {
+        max-width: 120px; /* Ajusta o tamanho da imagem para telas pequenas */
+    }
+
+    .Negrito {
+        font-size: 2.5rem; /* Diminui o tamanho da fonte */
+    }
+}

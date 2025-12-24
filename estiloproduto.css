@@ -1,0 +1,188 @@
+/* Estilos Gerais */
+* {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para garantir que padding e border não alterem o tamanho dos elementos */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Menu no topo */
+.Destaques {
+    text-decoration: none;
+    text-align: right;
+    padding: 20px;
+    background-color: #fff;
+    color: #0FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.Destaques a, a:visited {
+    color: #0FF;
+    text-decoration: none;
+}
+
+.Destaques a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Cards */
+.card-container {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #555;
+}
+.card img {
+    width: 100%;  /* Ajusta a largura da imagem para preencher o card */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#ajeitar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+#ajeitar p {
+    margin: 0;
+}
+
+#ajeitar a {
+    margin-right: 10px;
+}
+
+.ajeitar {
+    max-width: 180px;
+    margin-left: 20px;
+}
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .Destaques {
+        text-align: center; /* Alinha o menu no centro em telas menores */
+        padding: 10px;
+    }
+
+    .card-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .card img {
+        height: 180px; /* Ajusta a altura das imagens */
+    }
+
+    .card-title {
+        font-size: 1.2em; /* Ajusta o tamanho do título */
+    }
+
+    footer {
+        font-size: 1em; /* Aumenta o tamanho da fonte no footer */
+    }
+
+    /* Ajusta os ícones e a imagem no footer */
+    .ajeitar {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Em telas ainda menores (como smartphones em modo retrato) */
+    .Destaques {
+        padding: 12px;
+        font-size: 1em; /* Aumenta o tamanho do texto no menu */
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* Exibe os cards em uma coluna */
+    }
+
+    .card img {
+        height: 180px; /* Aumenta a altura das imagens */
+    }
+
+    .card-title {
+        font-size: 1.1em; /* Ajusta o tamanho do título */
+    }
+
+    footer {
+        font-size: 1em; /* Aumenta o tamanho da fonte no footer */
+        padding: 15px; /* Ajusta o espaçamento no footer */
+    }
+
+    .ajeitar {
+        max-width: 160px; /* Ajusta a largura da imagem de pagamento */
+    }
+
+    /* Botões de WhatsApp e Telefone */
+    .btn-whatsapp, .btn-phone {
+        position: fixed;
+        bottom: 15%; /* Ajuste para o botão de WhatsApp */
+        left: 15px; /* Distância da borda esquerda */
+        z-index: 999; /* Garantir que o botão fique acima de outros elementos */
+        font-size: 1.5em; /* Aumenta o tamanho do ícone */
+    }
+
+    .btn-phone {
+        bottom: 8%; /* Ajuste para o botão de telefone */
+        left: 15px;
+        font-size: 1.5em; /* Aumenta o tamanho do ícone */
+    }
+}

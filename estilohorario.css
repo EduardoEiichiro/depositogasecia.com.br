@@ -1,0 +1,155 @@
+/* Resetando estilo básico */
+* {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não alterem o tamanho dos elementos */
+}
+
+/* Estilo do menu de navegação */
+.Destaques {
+    text-align: right;
+    padding: 20px;
+    background-color: #fff;
+    color: #0FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Estilo para os links no menu */
+.Destaques a, a:visited {
+    color: #0FF;
+    text-decoration: none;
+}
+
+.Destaques a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Estilo do conteúdo da tabela */
+.table-container {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Fixa no final da tela */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Estilo dos ícones e links do rodapé */
+#ajeitar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#ajeitar p {
+    margin: 0;
+}
+
+#ajeitar div {
+    display: flex;
+    align-items: center;
+}
+
+#ajeitar a {
+    margin-right: 10px;
+}
+
+.ajeitar {
+    margin-left: 20px;
+    max-width: 180px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    .Destaques {
+        text-align: center; /* Alinha o texto ao centro */
+        padding: 15px; /* Ajusta o padding para telas menores */
+    }
+
+    .table-container {
+        width: 95%; /* Aumenta a largura da tabela para aproveitar mais espaço */
+    }
+
+    table {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para celulares */
+    }
+
+    th, td {
+        padding: 8px; /* Reduz o padding nas células da tabela */
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem; /* Ajuste no tamanho da fonte do rodapé */
+    }
+
+    #ajeitar {
+        flex-direction: column; /* Coloca os ícones em coluna */
+        align-items: center; /* Alinha os ícones verticalmente */
+    }
+
+    .ajeitar {
+        margin-left: 0; /* Remove o alinhamento da imagem */
+        max-width: 150px; /* Reduz o tamanho da imagem */
+    }
+}
+
+/* Para telas de smartphones em modo retrato */
+@media (max-width: 480px) {
+    .Destaques {
+        padding: 10px;
+        font-size: 0.9rem; /* Diminui o tamanho da fonte para telas pequenas */
+    }
+
+    .table-container {
+        width: 100%; /* Ajusta a largura da tabela para telas muito pequenas */
+    }
+
+    table {
+        font-size: 0.8rem; /* Reduz mais o tamanho da fonte para celular */
+    }
+
+    th, td {
+        padding: 6px; /* Diminui o padding nas células da tabela */
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.8rem; /* Tamanho da fonte do rodapé ajustado */
+    }
+
+    .ajeitar {
+        max-width: 120px; /* Reduz ainda mais o tamanho da imagem */
+    }
+}
